@@ -24,14 +24,34 @@ export default {
   },
 
   loading: {
-    color: '#fff'
+    color: '#25c8c8'
   },
 
   css: [
     '~/assets/styles/main.css'
   ],
 
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+
   buildModules: [
     '~/modules/yaml'
-  ]
+  ],
+
+  pwa: {
+    manifest: {
+      name: 'EDM Streams',
+      lang: 'en',
+      display: 'standalone'
+    },
+
+    meta: {
+      nativeUI: true
+    },
+
+    workbox: {
+      /* workbox options */
+    }
+  }
 }
