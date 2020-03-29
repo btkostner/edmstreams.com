@@ -13,29 +13,32 @@
       we've gone deaf
     </h2>
 
-    <nuxt-link class="button" to="/">
+    <nuxt-link
+      class="button"
+      to="/"
+    >
       Go Home
     </nuxt-link>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+  import Vue from 'vue'
 
-export default Vue.extend({
-  layout: 'message',
+  export default Vue.extend({
+    layout: 'message',
 
-  props: {
-    error: {
-      type: Object,
-      default: () => ({ statusCode: 404 })
+    props: {
+      error: {
+        type: Object,
+        default: () => ({ statusCode: 404 })
+      }
     }
-  }
-})
+  })
 </script>
 
 <style scoped>
-a {
-  display: block;
-}
+  a {
+    display: block;
+  }
 </style>

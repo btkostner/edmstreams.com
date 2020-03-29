@@ -1,0 +1,43 @@
+---
+
+# Time is in PST
+
+- name: Sacha Robotti
+  startDatetime: 2020-03-28 8:00pm PDT
+  endDatetime: 2020-03-28 8:30pm PDT
+  link: https://www.twitch.tv/insomniac_events
+
+- name: Sage Armstrong
+  startDatetime: 2020-03-28 8:30pm PDT
+  endDatetime: 2020-03-28 9:00pm PDT
+  link: https://www.twitch.tv/insomniac_events
+
+- name: i_o
+  startDatetime: 2020-03-28 9:00pm PDT
+  endDatetime: 2020-03-28 9:30pm PDT
+  link: https://www.twitch.tv/insomniac_events
+
+- name: Phantoms
+  startDatetime: 2020-03-28 9:30pm PDT
+  endDatetime: 2020-03-28 10:00pm PDT
+  link: https://www.twitch.tv/insomniac_events
+
+- name: Mat Zo
+  startDatetime: 2020-03-28 10:00pm PDT
+  endDatetime: 2020-03-28 10:30pm PDT
+  link: https://www.twitch.tv/insomniac_events
+
+- name: Medasin
+  startDatetime: 2020-03-28 10:30pm PDT
+  endDatetime: 2020-03-28 11:00pm PDT
+  link: https://www.twitch.tv/insomniac_events
+
+- name: K?D
+  startDatetime: 2020-03-28 11:00pm PDT
+  endDatetime: 2020-03-28 11:30pm PDT
+  link: https://www.twitch.tv/insomniac_events
+
+- name: Flosstradamus
+  startDatetime: 2020-03-28 11:30pm PDT
+  endDatetime: 2020-03-28 12:00pm PDT
+  link: https://www.twitch.tv/insomniac_events
