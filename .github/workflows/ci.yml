@@ -80,3 +80,12 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./dist
+
+      - name: Purge
+        run: |
+          curl -X DELETE \
+            https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache \
+            -H 'Content-Type: application/json' \
+            -H 'Authorization: Bearer ${{ secrets.CLOUDFLARE_KEY }}' \
+            -H 'cache-control: no-cache' \
+            -d '{"files":["https://edmstreams.com"]}'
