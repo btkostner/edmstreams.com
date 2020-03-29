@@ -9,6 +9,8 @@ import parse from 'date-fns/parse'
 const DEFAULT_STREAM_LENGTH = { minutes: 30 }
 
 const timezones = {
+  GMT: '-00',
+  MDT: '-06',
   PDT: '-07',
   PST: '-08'
 }
@@ -29,7 +31,16 @@ const formatStream = data => ({
 
 const streams = require('~/data/streams')
   .map(formatStream)
-  .sort((a, b) => (a.datetime - b.datetime))
+  .sort((a, b) => (a.startDatetime - b.startDatetime))
+  .map((s, i, a) => {
+    const nextSet = a.slice(i + 1).find((ns) => (ns.link === s.link))
+
+    s.endDatetime = (s.endDatetime == null && nextSet != null)
+      ? nextSet.startDatetime
+      : s.endDatetime
+
+    return s
+  })
 
 export const state = () => ({
   datetime: Date.now()
