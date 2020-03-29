@@ -7,7 +7,7 @@
   <div>
     <h1>Streams</h1>
 
-    <div class="past">
+    <div class="past" v-if="past.length">
       <h2>Past Streams</h2>
 
       <edm-stream
@@ -19,6 +19,7 @@
     </div>
 
     <div
+      v-if="current.length"
       ref="current"
       class="current"
     >
@@ -32,7 +33,7 @@
       />
     </div>
 
-    <div class="future">
+    <div class="future" v-if="future.length">
       <h2>Future Streams</h2>
 
       <edm-stream
@@ -64,7 +65,9 @@
     },
 
     mounted () {
-      this.$refs.current.scrollIntoView(true)
+      if (this.$refs.current != null) {
+        this.$refs.current.scrollIntoView(true)
+      }
 
       this.interval = setInterval(() => {
         this.$store.commit('streams/updateTime')
