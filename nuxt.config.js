@@ -8,6 +8,9 @@ export default {
 
   head: {
     title: 'EDM Streams',
+    htmlAttrs: {
+      lang: 'en'
+    },
 
     meta: [
       { charset: 'utf-8' },

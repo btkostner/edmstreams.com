@@ -7,6 +7,7 @@
   <a
     :class="state"
     :href="link"
+    rel="noopener"
     target="_blank"
   >
     <div class="time">
@@ -103,7 +104,7 @@
   }
 
   .current {
-    background-color: rgb(20, 169, 209);
+    background-color: rgb(12, 152, 190);
   }
 
   .future {
