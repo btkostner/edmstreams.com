@@ -90,7 +90,7 @@
   a {
     align-content: center;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid transparent;
     color: #fff;
     display: flex;
     justify-content: stretch;
@@ -100,15 +100,18 @@
   }
 
   .past {
-    background-color: rgb(107, 107, 107);
+    background: linear-gradient(236deg, #262626, #222121 50vw);
+    border-color: #111;
   }
 
   .current {
-    background-color: rgb(12, 152, 190);
+    background: linear-gradient(236deg, #cc0707, #ab0404 50vw);
+    border-color: #450a0a;
   }
 
   .future {
-    background-color: rgb(24, 159, 13);
+    background: linear-gradient(236deg, #154e57, #0e3940 50vw);
+    border-color: #062328;
   }
 
   .time {
@@ -128,6 +131,7 @@
   }
 
   .info {
+    font-weight: bold;
     padding: 0.4rem;
   }
 </style>
