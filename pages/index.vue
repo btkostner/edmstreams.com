@@ -7,7 +7,10 @@
   <div>
     <h1>Streams</h1>
 
-    <div class="past" v-if="past.length">
+    <div
+      v-if="past.length"
+      class="past"
+    >
       <h2>Past Streams</h2>
 
       <edm-stream
@@ -33,7 +36,10 @@
       />
     </div>
 
-    <div class="future" v-if="future.length">
+    <div
+      v-if="future.length"
+      class="future"
+    >
       <h2>Future Streams</h2>
 
       <edm-stream
