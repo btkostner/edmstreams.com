@@ -5,13 +5,11 @@
 
 <template>
   <div>
-    <h1>Streams</h1>
-
     <div
       v-if="past.length"
       class="past"
     >
-      <h2>Past Streams</h2>
+      <h1>Past Streams</h1>
 
       <edm-stream
         v-for="(s, idx) in past"
@@ -26,7 +24,7 @@
       ref="current"
       class="current"
     >
-      <h2>Current Streams</h2>
+      <h1>Current Streams</h1>
 
       <edm-stream
         v-for="(s, idx) in current"
@@ -40,7 +38,7 @@
       v-if="future.length"
       class="future"
     >
-      <h2>Future Streams</h2>
+      <h1>Future Streams</h1>
 
       <edm-stream
         v-for="(s, idx) in future"
@@ -89,8 +87,7 @@
 </script>
 
 <style scoped>
-  h1,
-  h2 {
+  h1 {
     padding: 0 1rem;
   }
 </style>
