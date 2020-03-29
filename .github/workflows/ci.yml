@@ -71,8 +71,8 @@ jobs:
 
       - name: Setup Hosting
         run: |
-          touch docs/.nojekyll &&
-          echo "edmstreams.com" > docs/CNAME
+          touch dist/.nojekyll &&
+          echo "edmstreams.com" > dist/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
