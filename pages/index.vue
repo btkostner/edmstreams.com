@@ -36,6 +36,7 @@
 
     <div
       v-if="future.length"
+      ref="future"
       class="future"
     >
       <h1>Future Streams</h1>
@@ -71,6 +72,8 @@
     mounted () {
       if (this.$refs.current != null) {
         this.$refs.current.scrollIntoView(true)
+      } else if (this.$refs.future != null) {
+        this.$refs.future.scrollIntoView(true)
       }
 
       this.interval = setInterval(() => {
