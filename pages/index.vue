@@ -71,9 +71,9 @@
 
     mounted () {
       if (this.$refs.current != null) {
-        this.$refs.current.scrollIntoView(true)
+        this.scrollTo(this.$refs.current)
       } else if (this.$refs.future != null) {
-        this.$refs.future.scrollIntoView(true)
+        this.scrollTo(this.$refs.future)
       }
 
       this.interval = setInterval(() => {
@@ -84,6 +84,12 @@
     beforeDestroy () {
       if (this.interval != null) {
         clearInterval(this.interval)
+      }
+    },
+
+    methods: {
+      scrollTo (el) {
+        this.$nextTick(() => el.scrollIntoView(true))
       }
     }
   }
