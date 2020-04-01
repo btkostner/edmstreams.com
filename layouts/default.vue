@@ -30,11 +30,13 @@
   }
 
   footer {
+    -webkit-backdrop-filter: blur(10px);
     background-color: rgba(45, 45, 45, 0.9);
     border-top: 1px solid rgba(140, 140, 140, 0.8);
     bottom: 0;
     color: #fff;
     left: 0;
+    padding-bottom: env(safe-area-inset-bottom);
     position: sticky;
     right: 0;
     width: 100%;
