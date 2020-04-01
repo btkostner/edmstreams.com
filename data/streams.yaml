@@ -53,6 +53,11 @@
   endDatetime: 2020-03-31 4:00pm PDT
   link: https://www.twitch.tv/monstercat
 
+- name: Sullivan King
+  startDatetime: 2020-04-2 6:00pm PDT
+  endDatetime: 2020-04-2 8:00pm PDT
+  link: https://www.twitch.tv/sullivankingtv
+
 # Digital Mirage Friday
 
 - name: Kaskade
