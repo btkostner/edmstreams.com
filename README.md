@@ -1,6 +1,6 @@
 # edmstreams.com
 
-> a time table for EDM related live streams
+> A time table for EDM live str
 
 ## Build Setup
 

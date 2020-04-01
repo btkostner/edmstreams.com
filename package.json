@@ -1,7 +1,7 @@
 {
   "name": "edmstreams.com",
   "version": "1.0.0",
-  "description": "a time table for EDM related live streams",
+  "description": "A time table for EDM live str",
   "author": "Blake Kostner",
   "private": true,
   "scripts": {

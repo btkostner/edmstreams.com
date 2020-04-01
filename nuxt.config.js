@@ -15,7 +15,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'a time table for EDM related live streams' }
+      { hid: 'description', name: 'description', content: 'A time table for EDM live streams' }
     ],
 
     link: [
@@ -48,10 +48,6 @@ export default {
 
     meta: {
       nativeUI: true
-    },
-
-    workbox: {
-      /* workbox options */
     }
   }
 }
